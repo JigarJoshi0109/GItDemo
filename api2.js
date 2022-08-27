@@ -47,7 +47,7 @@ app.post('/jigar',async(req,res)=>{
         res.send(result);
        
     } catch (err) {
-        console.log(`SomeThing went Wrong in connection ${err}`)
+        console.log(`SomeThing went Wrong in post connection ${err}`)
     }
  
     
@@ -68,7 +68,7 @@ app.put('/jigar',async(req,res)=>{
       
 
     } catch (err) {
-        console.log(`SomeThing went Wrong in post connection ${err}`)
+        console.log(`SomeThing went Wrong in put connection ${err}`)
     }
    
 })
@@ -84,12 +84,10 @@ app.delete('/jigar',async(req,res)=>{
         
 
     } catch (err) {
-        console.log(`SomeThing went Wrong in post connection ${err}`)
+        console.log(`SomeThing went Wrong in delete connection ${err}`)
     }
 
 })
-
-
 app.listen(3300,()=>{
     console.log(('Server is started at port 3300'));
 })
