@@ -13,11 +13,13 @@ function callbacks(a,b){
 callbacks(3,5);
 
 
+
+
 function x(y){
-console.log(x);
+console.log(" i am in x function");
 y();
 }
 
 x(function y(){
-    console.log(y);
+    console.log("i am in y fuction");
 })
